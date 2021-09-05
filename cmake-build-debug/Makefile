@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/avarys/CLionProjects/untitled2
+CMAKE_SOURCE_DIR = /Users/avarys/CLionProjects/minitalk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/avarys/CLionProjects/untitled2/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/avarys/CLionProjects/minitalk/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/avarys/CLionProjects/untitled2/cmake-build-debug/CMakeFiles /Users/avarys/CLionProjects/untitled2/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/avarys/CLionProjects/minitalk/cmake-build-debug/CMakeFiles /Users/avarys/CLionProjects/minitalk/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/avarys/CLionProjects/untitled2/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/avarys/CLionProjects/minitalk/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +117,100 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named untitled2
+# Target rules for targets named test
 
 # Build rule for target.
-untitled2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 untitled2
-.PHONY : untitled2
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
+.PHONY : test
 
 # fast build rule for target.
-untitled2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/build
-.PHONY : untitled2/fast
+test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
+
+#=============================================================================
+# Target rules for targets named server
+
+# Build rule for target.
+server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server
+.PHONY : server
+
+# fast build rule for target.
+server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
+.PHONY : server/fast
+
+#=============================================================================
+# Target rules for targets named client
+
+# Build rule for target.
+client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client
+.PHONY : client
+
+# fast build rule for target.
+client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
+.PHONY : client/fast
+
+#=============================================================================
+# Target rules for targets named ft_printf
+
+# Build rule for target.
+ft_printf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ft_printf
+.PHONY : ft_printf
+
+# fast build rule for target.
+ft_printf/fast:
+	$(MAKE) $(MAKESILENT) -f ft_printf/CMakeFiles/ft_printf.dir/build.make ft_printf/CMakeFiles/ft_printf.dir/build
+.PHONY : ft_printf/fast
+
+#=============================================================================
+# Target rules for targets named libft
+
+# Build rule for target.
+libft: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libft
+.PHONY : libft
+
+# fast build rule for target.
+libft/fast:
+	$(MAKE) $(MAKESILENT) -f ft_printf/libft/CMakeFiles/libft.dir/build.make ft_printf/libft/CMakeFiles/libft.dir/build
+.PHONY : libft/fast
+
+client.o: client.c.o
+.PHONY : client.o
+
+# target to build an object file
+client.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client.c.o
+.PHONY : client.c.o
+
+client.i: client.c.i
+.PHONY : client.i
+
+# target to preprocess a source file
+client.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client.c.i
+.PHONY : client.c.i
+
+client.s: client.c.s
+.PHONY : client.s
+
+# target to generate assembly for a file
+client.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client.c.s
+.PHONY : client.c.s
 
 main.o: main.c.o
 .PHONY : main.o
 
 # target to build an object file
 main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -142,7 +218,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -150,8 +226,32 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main.c.s
 .PHONY : main.c.s
+
+server.o: server.c.o
+.PHONY : server.o
+
+# target to build an object file
+server.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server.c.o
+.PHONY : server.c.o
+
+server.i: server.c.i
+.PHONY : server.i
+
+# target to preprocess a source file
+server.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server.c.i
+.PHONY : server.c.i
+
+server.s: server.c.s
+.PHONY : server.s
+
+# target to generate assembly for a file
+server.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server.c.s
+.PHONY : server.c.s
 
 # Help Target
 help:
@@ -161,10 +261,20 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... untitled2"
+	@echo "... client"
+	@echo "... ft_printf"
+	@echo "... libft"
+	@echo "... server"
+	@echo "... test"
+	@echo "... client.o"
+	@echo "... client.i"
+	@echo "... client.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... server.o"
+	@echo "... server.i"
+	@echo "... server.s"
 .PHONY : help
 
 

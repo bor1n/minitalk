@@ -1,3 +1,11 @@
-/Users/avarys/CLionProjects/untitled2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/avarys/CLionProjects/untitled2/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/avarys/CLionProjects/untitled2/cmake-build-debug/CMakeFiles/untitled2.dir
+/Users/avarys/CLionProjects/minitalk/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/avarys/CLionProjects/minitalk/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/avarys/CLionProjects/minitalk/cmake-build-debug/CMakeFiles/test.dir
+/Users/avarys/CLionProjects/minitalk/cmake-build-debug/CMakeFiles/server.dir
+/Users/avarys/CLionProjects/minitalk/cmake-build-debug/CMakeFiles/client.dir
+/Users/avarys/CLionProjects/minitalk/cmake-build-debug/ft_printf/CMakeFiles/rebuild_cache.dir
+/Users/avarys/CLionProjects/minitalk/cmake-build-debug/ft_printf/CMakeFiles/edit_cache.dir
+/Users/avarys/CLionProjects/minitalk/cmake-build-debug/ft_printf/CMakeFiles/ft_printf.dir
+/Users/avarys/CLionProjects/minitalk/cmake-build-debug/ft_printf/libft/CMakeFiles/rebuild_cache.dir
+/Users/avarys/CLionProjects/minitalk/cmake-build-debug/ft_printf/libft/CMakeFiles/edit_cache.dir
+/Users/avarys/CLionProjects/minitalk/cmake-build-debug/ft_printf/libft/CMakeFiles/libft.dir

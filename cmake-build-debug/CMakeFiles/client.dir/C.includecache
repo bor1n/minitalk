@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/avarys/CLionProjects/minitalk/client.c
+client.h
+/Users/avarys/CLionProjects/minitalk/client.h
+
+/Users/avarys/CLionProjects/minitalk/client.h
+ft_printf/includes/ft_printf.h
+/Users/avarys/CLionProjects/minitalk/ft_printf/includes/ft_printf.h
+signal.h
+/Users/avarys/CLionProjects/minitalk/signal.h
+
+/Users/avarys/CLionProjects/minitalk/ft_printf/includes/ft_printf.h
+../libft/libft.h
+/Users/avarys/CLionProjects/minitalk/ft_printf/libft/libft.h
+stdarg.h
+-
+
+/Users/avarys/CLionProjects/minitalk/ft_printf/libft/libft.h
+string.h
+-
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+
