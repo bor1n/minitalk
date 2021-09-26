@@ -9,8 +9,8 @@ LIBFT = libft
 SERVER_SRCS = server.c
 CLIENT_SRCS = client.c
 
-SERVER_B =
-CLIENT_B =
+SERVER_B = server_bonus.c
+CLIENT_B = client_bonus.c
 
 SERVER_OBJS	= $(patsubst %.c,%.o,$(SERVER_SRCS))
 CLIENT_OBJS = $(patsubst %.c,%.o,$(CLIENT_SRCS))
@@ -31,9 +31,9 @@ HEADERS = $(SERVER_HEADER) $(CLIENT_HEADER) $(LIBFTPRINTF)/includes/ft_printf.h 
 all:	$(NAME)
 
 %.o : %.c	$(HEADERS)
-	gcc $(CFLAGS) -I $(HEADER) -c $< -o $@
+	gcc $(CFLAGS) -I includes/ -c $< -o $@
 
-$(NAME):	$(OBJS)
+$(NAME):	$(SERVER_OBJS) $(CLIENT_OBJS)
 	@make -C $(LIBFTPRINTF)
 	@make bonus -C $(LIBFTPRINTF)
 	@gcc ft_printf/libftprintf.a $(SERVER_OBJS) -o $(SERVER)

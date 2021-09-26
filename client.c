@@ -15,7 +15,7 @@ int send_char(pid_t pid, int character)
 			kill(pid, SIGUSR2);
 		character = character << 1;
 		shift++;
-		usleep(100);
+		usleep(50);
 	}
 	return 1;
 }
@@ -44,6 +44,10 @@ int main(int argc, char **argv) {
 			exit(1);
 		message = argv[2];
 		send_message(pid, message);
+	}
+	else
+	{
+		ft_printf("Usage: ./client (SERVER PID) (MESSAGE)");
 	}
 	return EXIT_SUCCESS;
 }
